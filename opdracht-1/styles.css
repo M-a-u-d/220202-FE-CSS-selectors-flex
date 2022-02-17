@@ -3,42 +3,54 @@
 ========================================================= */
 
 /* 0: Voorbeeld: maak de achtergrondkleur van de pagina wit */
-
 body {
     background-color: #FFFFFF;
 }
 
 /* 1.1 Geef de 'img' tag in the header een ID en zet zijn breedte op 100% */
-
 img {
     width: 100%
 }
 
-
 /* 1.2 Verander de kleur van alle list items in de unordered list naar hsl(110, 29%, 52%) */
-
-
+li {
+    color: hsl(110, 29%, 52%);
+}
 
 /* 1.3 Geef de 'span' tag in de footer een beschrijvende class name en maak de lettergrootte kleiner  */
-
-
+footer > span {
+    font-size: smaller;
+}
 
 /* 1.4 Haal de text-decoration van navigatie-links weg, geef onbezochte links de kleur hsl(359, 79%, 56%) en verander de kleur wanneer de gebruiker er overheen hovert. */
-
-
+header a {
+    text-decoration: none;
+    color: hsl(359, 79%, 56%);
+}
+header a:hover {
+    color: hsl(110 29% 52%);
+}
 
 /* 1.5 Maak een hover- en visited stijl voor alle links in 'main'. */
-
-
+main a:visited {
+    color: hsl(359, 79%, 56%);
+}
+main a:hover{
+    color: hsl(110 29% 52%);
+}
 
 /* Verander de achtergrond van de SignUp button. Tip: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors  */
-
-
+input[type="submit"]:active{
+    background-color: hsl(110 29% 52%);
+}
 
 /* Geef het tekst-veld een blauwe rand wanneer hij in focus is */
-
-
+input[type="text"]:focus{
+    outline: none;
+    border: solid 3px; color: hsl(110 29% 52%);
+}
 
 /* Target alle heading tags op de pagina en zet hun font-family op 'Noto Sans JP', sans-serif */
-
-
+h1, h2, h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+}
